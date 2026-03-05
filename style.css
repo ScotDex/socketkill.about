@@ -159,3 +159,46 @@
 .full-width {
   grid-column: 1 / -1;
 }
+
+.ad-card {
+  border: 1px solid #1a1a2e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ad-card img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+.ad-card h3 {
+  color: #00ff88;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.ad-card p {
+  color: #888;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ad-cta {
+  display: block;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.ad-cta:hover {
+  background: #00ff88;
+  color: #000;
+  text-decoration: none;
+}
