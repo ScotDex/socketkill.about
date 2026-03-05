@@ -142,3 +142,20 @@
       font-size: 0.8rem;
       letter-spacing: 0.1em;
     }
+
+    .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.grid section {
+  border: 1px solid #1a1a2e;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
