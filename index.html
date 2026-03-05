@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.Kill — About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0f;
+      color: #ccc;
+      font-family: 'Courier New', monospace;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      border-bottom: 1px solid #1a1a2e;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #00ff88;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #888;
+      margin-bottom: 2rem;
+    }
+
+    .hero .launch {
+      background: #00ff88;
+      color: #000;
+      padding: 0.75rem 2.5rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      font-family: 'Courier New', monospace;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .hero .launch:hover {
+      background: #00cc66;
+      text-decoration: none;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #1a1a2e;
+    }
+
+    section h2 {
+      color: #00ff88;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    section p {
+      color: #aaa;
+      max-width: 600px;
+    }
+
+    /* LINKS */
+    .links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #ccc;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+    }
+
+    .links a:hover {
+      color: #00ff88;
+    }
+
+    /* SERVICES */
+    .services p {
+      color: #aaa;
+    }
+
+    /* CHANGELOG */
+    .changelog-list {
+      list-style: none;
+      color: #aaa;
+    }
+
+    .changelog-list li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #1a1a2e;
+      font-size: 0.9rem;
+    }
+
+    .changelog-list li span {
+      color: #555;
+      margin-right: 1rem;
+      font-size: 0.8rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #444;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>SOCKET.KILL</h1>
+    <p>Real-time EVE Online killmail streaming.</p>
+    <a href="https://socketkill.com" class="launch">LAUNCH APP</a>
+  </div>
+
+  <div class="container">
+
+    <!-- COMMUNITY -->
+    <section>
+      <h2>Community</h2>
+      <div class="links">
+        <a href="https://discord.gg/GNgW9FX2B6">Discord</a>
+        <a href="https://twitter.com/scottishdex">X / Twitter</a>
+        <a href="https://bsky.app/profile/scottishdex.bsky.social">Bluesky</a>
+        <a href="https://github.com/scotdex">GitHub</a>
+      </div>
+    </section>
+
+    <!-- API -->
+    <section>
+      <h2>API</h2>
+      <p>Socket.Kill exposes a public WebSocket API for real-time killmail data. Built for third-party developers and tools.</p>
+      <br>
+      <a href="https://socketkill.com/api">View API Documentation →</a>
+    </section>
+
+    <!-- STATUS -->
+    <section>
+      <h2>Status</h2>
+      <p>Current platform status and uptime monitoring.</p>
+      <br>
+      <a href="https://stats.uptimerobot.com/1qn5EGcEZn">View Status Page →</a>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <h2>Services</h2>
+      <p>Available in-game for corp and alliance IT consultancy. Whether it's AllianceAuth, web tooling, or infrastructure — get in touch.</p>
+      <br>
+      <p>In-game character: <a href="#">ScottishDex</a></p>
+      <p>Email: <a href="mailto:hello@socketkill.com">hello@socketkill.com</a></p>
+    </section>
+
+    <!-- CHANGELOG -->
+    <section>
+      <h2>Changelog</h2>
+      <ul class="changelog-list">
+        <li><span>v1.5.0</span> Bluesky integration for whale kills</li>
+        <li><span>v1.4.0</span> Corp Discord webhook system</li>
+        <li><span>v1.3.0</span> R2 run-to-exhaustion polling</li>
+        <li><span>v1.2.0</span> Sequence gap monitoring</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+      <p>Built and maintained by <a href="https://twitter.com/scottishdex">@ScottishDex</a>.</p>
+      <br>
+      <p>Nominated for EVE Fanfest 2025 Third Party Developer Award.</p>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    SOCKET.KILL — v1.5.0 — POWERED BY CLOUDFLARE
+  </footer>
+
+</body>
+</html>
