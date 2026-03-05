@@ -202,3 +202,45 @@
   color: #000;
   text-decoration: none;
 }
+
+/* 1. Set up the main wrapper as a Grid */
+.page-wrapper {
+  display: grid;
+  /* Creates 3 columns: sidebars take 200px, middle takes the remaining space */
+  grid-template-columns: 200px 1fr 200px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: start; /* Prevents ads from stretching vertically */
+}
+
+/* 2. Standardize the Ad Cards so they don't overflow */
+.ad-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ad-card img {
+  max-width: 100%; /* Ensures images never leak out of the sidebar */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* 3. Responsive Design: Stack them on small screens */
+@media (max-width: 900px) {
+  .page-wrapper {
+    /* Changes from 3 columns to 1 column */
+    grid-template-columns: 1fr;
+  }
+
+  /* Moves ads below the main content on mobile for better UX */
+  .ad-left { order: 2; }
+  .container { order: 1; }
+  .ad-right { order: 3; }
+}
