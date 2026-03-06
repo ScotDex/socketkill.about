@@ -1,23 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  background: #0a0a0f;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}
 
-    body {
-      background: #0a0a0f;
-      color: #ccc;
-      font-family: 'Courier New', monospace;
-      line-height: 1.6;
-    }
+a {
+  color: #00ff88;
+  text-decoration: none;
+}
 
-    a {
-      color: #00ff88;
-      text-decoration: none;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    .links a {
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid #1a1a2e;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ff88;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.hero .launch {
+  background: #00ff88;
+  color: #000;
+  padding: 0.75rem 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-family: 'Courier New', monospace;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero .launch:hover {
+  background: #00cc66;
+  text-decoration: none;
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.links a {
   font-size: 2rem;
   color: #ccc;
   transition: color 0.2s;
@@ -28,126 +77,36 @@
   text-decoration: none;
 }
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* CONTAINER */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+/* SECTIONS */
+section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #1a1a2e;
+}
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 2rem 2rem;
-      border-bottom: 1px solid #1a1a2e;
-    }
+section h2 {
+  color: #00ff88;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
 
-    .hero h1 {
-      font-size: 3rem;
-      color: #00ff88;
-      letter-spacing: 0.15em;
-      margin-bottom: 1rem;
-    }
+section p {
+  color: #aaa;
+  max-width: 600px;
+}
 
-    .hero p {
-      font-size: 1.2rem;
-      color: #888;
-      margin-bottom: 2rem;
-    }
-
-    .hero .launch {
-      background: #00ff88;
-      color: #000;
-      padding: 0.75rem 2.5rem;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-      font-family: 'Courier New', monospace;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .hero .launch:hover {
-      background: #00cc66;
-      text-decoration: none;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #1a1a2e;
-    }
-
-    section h2 {
-      color: #00ff88;
-      font-size: 0.85rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
-
-    section p {
-      color: #aaa;
-      max-width: 600px;
-    }
-
-    /* LINKS */
-    .links {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-
-    .links a {
-      color: #ccc;
-      font-size: 0.95rem;
-      letter-spacing: 0.05em;
-    }
-
-    .links a:hover {
-      color: #00ff88;
-    }
-
-    /* SERVICES */
-    .services p {
-      color: #aaa;
-    }
-
-    /* CHANGELOG */
-    .changelog-list {
-      list-style: none;
-      color: #aaa;
-    }
-
-    .changelog-list li {
-      padding: 0.4rem 0;
-      border-bottom: 1px solid #1a1a2e;
-      font-size: 0.9rem;
-    }
-
-    .changelog-list li span {
-      color: #555;
-      margin-right: 1rem;
-      font-size: 0.8rem;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #444;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-    }
-
-    .grid {
+/* GRID */
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
   padding: 2rem 0;
 }
@@ -162,18 +121,21 @@
   grid-column: 1 / -1;
 }
 
+/* AD CARDS */
 .ad-card {
-  border: 1px solid #1a1a2e;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
   text-align: center;
 }
 
 .ad-card img {
-  width: 100%;
-  max-width: 120px;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 0.75rem;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .ad-card h3 {
@@ -205,43 +167,31 @@
   text-decoration: none;
 }
 
-/* 1. Set up the main wrapper as a Grid */
+/* PAGE WRAPPER */
 .page-wrapper {
   display: grid;
-  /* Creates 3 columns: sidebars take 200px, middle takes the remaining space */
   grid-template-columns: 200px 1fr 200px;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  align-items: start; /* Prevents ads from stretching vertically */
+  align-items: start;
 }
 
-/* 2. Standardize the Ad Cards so they don't overflow */
-.ad-card {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 4px;
+/* FOOTER */
+footer {
   text-align: center;
+  padding: 2rem;
+  color: #444;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
 }
 
-.ad-card img {
-  max-width: 100%; /* Ensures images never leak out of the sidebar */
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-/* 3. Responsive Design: Stack them on small screens */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .page-wrapper {
-    /* Changes from 3 columns to 1 column */
     grid-template-columns: 1fr;
   }
-
-  /* Moves ads below the main content on mobile for better UX */
   .ad-left { order: 2; }
   .container { order: 1; }
   .ad-right { order: 3; }
